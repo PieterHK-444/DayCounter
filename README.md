@@ -141,7 +141,29 @@ Modify the color scheme in `components/ui/theme-provider.tsx` and your Tailwind 
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Recommended)
+
+This project is configured for automatic deployment to GitHub Pages:
+
+1. **Enable GitHub Pages**:
+
+   - Go to your repository Settings
+   - Navigate to Pages section
+   - Set source to "GitHub Actions"
+
+2. **Push to GitHub**:
+
+   ```bash
+   git add .
+   git commit -m "Configure for GitHub Pages"
+   git push origin main
+   ```
+
+3. **Automatic Deployment**:
+   - The GitHub Actions workflow will automatically build and deploy
+   - Your site will be available at: `https://yourusername.github.io/daycounter`
+
+### Vercel (Alternative)
 
 1. Push your code to GitHub
 2. Connect your repository to [Vercel](https://vercel.com)
