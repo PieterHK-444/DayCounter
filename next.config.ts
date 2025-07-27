@@ -6,7 +6,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/daycounter" : "",
+  // Remove basePath for now to fix theme issues
+  // basePath: process.env.NODE_ENV === "production" ? "/daycounter" : "",
+  experimental: {
+    // Enable static export optimizations
+    optimizePackageImports: ["next-themes"],
+  },
 };
 
 export default nextConfig;

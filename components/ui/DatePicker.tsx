@@ -149,7 +149,7 @@ function DatePicker() {
                 </motion.span>
               </Button>
             </MorphingPopoverTrigger>
-            <MorphingPopoverContent className="w-96 p-8 shadow-lg border bg-neutral-100 dark:bg-neutral-800 text-card-foreground">
+            <MorphingPopoverContent className="w-96 p-8 shadow-lg border bg-card text-card-foreground">
               <div className="grid gap-6">
                 <div className="space-y-4">
                   <motion.div
@@ -160,7 +160,7 @@ function DatePicker() {
                     <motion.h2
                       layoutId="calculate-icon"
                       layout="position"
-                      className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2"
+                      className="text-4xl font-bold text-foreground mb-2"
                     >
                       {daysDifference} days
                     </motion.h2>

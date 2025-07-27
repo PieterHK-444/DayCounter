@@ -141,6 +141,15 @@ Modify the color scheme in `components/ui/theme-provider.tsx` and your Tailwind 
 
 ## 🚀 Deployment
 
+### Theme Fixes Applied
+
+The application has been updated to properly handle theme switching on static hosting platforms:
+
+- **Fixed Hydration Issues**: Added proper mounted state handling to prevent theme flash
+- **Removed Hardcoded Dark Classes**: Updated components to use theme-aware CSS classes
+- **Theme-Aware Background**: Created a component that switches between DarkVeil and light background
+- **Improved Theme Toggle**: Enhanced the theme toggle with proper state management
+
 ### GitHub Pages (Recommended)
 
 This project is configured for automatic deployment to GitHub Pages:
